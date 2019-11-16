@@ -1,9 +1,14 @@
 body {
   text-transform: uppercase;
   max-width: 100%;
-  font-size: 10px;
+  max-height: 100%;
+  font-size: 15px;
   text-align: center;
   font-weight: bold;
+  background-image: url(GoW.png);
+  background-size: 100% 100%;
+  color: white;
+  background-repeat: no-repeat;
 
 }
 
@@ -14,65 +19,62 @@ h1 {
 }
 
 section {
-  border: 2px dashed darkred;
   padding: 10px;
-  margin: 10px;
+  margin: 0px;
   display: flex;
   justify-content: center;
 }
 
 .split {
-  border: 2px solid dimgray;
   padding: 10px;
-  margin: 10px;
+  margin: 0px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-
 }
 
 section.nav {
-  border: 2px solid darkgreen;
   padding: 10px;
   justify-content: space-between;
 }
 
 section.nav .topbar {
-  border: 2px solid blue;
   padding: 10px;
   margin: 0px 10px;
   text-decoration: none;
+  color: white;
 }
 
 section.nav .logo {
-  border: 2px solid yellow;
   padding: 10px;
 
 }
 
 section.nav .ordbutton {
-  border: 2px solid deeppink;
+  border: 2px solid darkgrey;
   padding: 10px 30px;
   text-decoration: none;
+  color: inherit;
+  filter: opacity(.6);
+
 }
 
 section .gtitle {
-  border: 2px solid pink;
   padding: 10px;
+  filter: opacity(.7);
 }
 
 section.middle {
-  border: 2px solid darkorange;
   padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
 section.middle div {
-  border: 2px solid blueviolet;
   padding: 10px;
   align-self: center;
   margin: 30px;
-  width: 300px;
+  width: 400px;
   resize: both;
   overflow: auto;
 }
@@ -87,40 +89,36 @@ section .button {
 }
 
 section.images {
-  border: 2px solid dimgrey;
   padding: 10px;
   justify-content: space-around;
 }
 
-section.images div {
-  border: 2px solid crimson;
-  padding: 10px;
+section.images img {
+  border: 3px solid darkblue;
+  padding: 2px;
 }
 
 footer {
   display: flex;
-  border: 2px solid aqua;
   padding: 10px;
   margin: 10px;
   justify-content: space-between;
 }
 
 section.bottom {
-  border: 2px solid aquamarine;
   padding: 10px;
   margin: 10px;
   display: flex;
 }
 
 section.bottom .bottombar {
-  border: 2px solid blue;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
+  color: inherit;
 }
 
 section .bottomlogo {
-  border: 2px solid firebrick;
   padding: 10px;
   margin: 10px;
 }
