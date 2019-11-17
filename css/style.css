@@ -5,7 +5,10 @@ body {
   font-size: 15px;
   text-align: center;
   font-weight: bold;
-  background-image: url(GoW.png);
+  background-image:
+  url(snow_fall.gif),
+  url(GoW.png);
+
   background-size: 100% 100%;
   color: white;
   background-repeat: no-repeat;
@@ -15,7 +18,6 @@ body {
 h1 {
   text-transform: capitalize;
   font-size: 100px;
-  margin: 20px;
 }
 
 section {
@@ -34,7 +36,7 @@ section {
 }
 
 section.nav {
-  padding: 10px;
+  padding: 0px;
   justify-content: space-between;
 }
 
@@ -43,6 +45,13 @@ section.nav .topbar {
   margin: 0px 10px;
   text-decoration: none;
   color: white;
+  transition: all 300ms ease;
+}
+
+.topbar:hover {
+  background-color: darkgray;
+  color: white;
+  cursor: pointer;
 }
 
 section.nav .logo {
@@ -56,7 +65,13 @@ section.nav .ordbutton {
   text-decoration: none;
   color: inherit;
   filter: opacity(.6);
+  transition: all 300ms ease;
+}
 
+  .ordbutton:hover {
+  background-color: darkgray;
+  color: white;
+  cursor: pointer;
 }
 
 section .gtitle {
@@ -65,7 +80,7 @@ section .gtitle {
 }
 
 section.middle {
-  padding: 10px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -101,7 +116,7 @@ section.images img {
 footer {
   display: flex;
   padding: 10px;
-  margin: 10px;
+  margin: 0px;
   justify-content: space-between;
 }
 
@@ -121,4 +136,24 @@ section.bottom .bottombar {
 section .bottomlogo {
   padding: 10px;
   margin: 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main.fade {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
