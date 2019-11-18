@@ -1,6 +1,5 @@
 body {
   text-transform: uppercase;
-  max-width: 100%;
   max-height: 100%;
   font-size: 15px;
   text-align: center;
@@ -8,8 +7,8 @@ body {
   background-image:
   url(snow_fall.gif),
   url(GoW.png);
-
-  background-size: 100% 100%;
+  background-size: auto 100%;
+  background-position: center;
   color: white;
   background-repeat: no-repeat;
   font-family: 'PT Sans', sans-serif;
@@ -21,7 +20,7 @@ h1 {
 }
 
 section {
-  padding: 10px;
+  padding: 5px;
   margin: 0px;
   display: flex;
   justify-content: center;
@@ -156,4 +155,63 @@ main.fade {
   animation-delay: 1s;
   animation-duration: 5s;
   animation-fill-mode: forwards;
+}
+
+/*Mobile */
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  section.nav {
+    margin: 0;
+    padding: 0px;
+  }
+
+  .topbar {
+    margin: 0;
+    padding: 5px;
+  }
+
+  div.split {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  section.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  section.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Tablet */
+@media screen and (min-width: 575px) and (max-width: 991px) {
+  h1 {
+    font-size: 75px;
+  }
+
+  section.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Desktop */
+@media screen and (min-width: 992px) {
+
+  }
 }
